@@ -1,0 +1,39 @@
+.main {}
+
+.main-row {
+    display: flex;
+}
+
+.main-content{}
+
+.button {
+    width: 193px;
+    height: 19px;
+    left: 35px;
+    top: 21px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    width: 262px;
+    height: 61px;
+    color: #E4E5EA;
+    background: #4077F3;
+}
+
+.main-redlight {
+    position: relative;
+    height: 311px;
+    width: 311px;
+    left: -102px;
+    top: 251px;
+    border-radius: 0px;
+
+    background: #961A1A;
+    opacity: 0.5;
+    filter: blur(196px);
+}
