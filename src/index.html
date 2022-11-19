@@ -15,13 +15,14 @@
 </head>
 
 <body>
-    <div class="bg">
-        <div class="purple"></div>
-        <div class="red"></div>
-        <div class="red_small"></div>
-        <div class="purple_light"></div>
-        <div class="red_light"></div>
+    <div class="bg" id="scene">
+        <div data-depth="0.9" class="bg__item"><div class="purple"></div></div>
+        <div data-depth="0.2" class="bg__item"><div class="red"></div></div>
+        <div data-depth="0.3" class="bg__item"><div class="red_small"></div></div>
+        <div data-depth="0.2" class="bg__item"><div class="purple_light"></div></div>
+        <div data-depth="0.1" class="bg__item"><div class="red_light"></div></div>
     </div>
+
     <div class="content">
         <header class="header">
             <div class="container">
@@ -59,32 +60,32 @@
         <section class="main">
             <div class="container">
                 <div class="main-row">
-                    <div>
+                    <div class="main-container">
                         <h1 class="main-title">Зарабатывайте больше <span>с WELBEX</span></h1>
                         <p class="main-info">Развиваем и контролируем продажи за вас</p>
                     </div>
 
                     <div class="info">
-                        <h3 class="info-title">Вместе с <span>БЕСПЛАТНОЙ КОНСУЛЬТАЦИЕЙ</span> мы дарим:</h3>
+                        <h3 class="info-title">Вместе с <span>бесплатной консультацией</span> мы дарим:</h3>
                         <div class="info-list">
                             <div class="info-item">
                                 <h4 class="info-item__title">Виджеты</h4>
-                                <p class="info-item__description">30 готовых решений</p>
+                                <p class="info-item__description no-mobile">30 готовых решений</p>
                             </div>
                             <div class="info-item">
                                 <h4 class="info-item__title">Dashboard</h4>
-                                <p class="info-item__description">с показателями вашего бизнеса</p>
+                                <p class="info-item__description no-mobile">с показателями вашего бизнеса</p>
                             </div>
                             <div class="info-item">
                                 <h4 class="info-item__title">Skype аудит</h4>
-                                <p class="info-item__description">отдела продаж <br> и CRM системы</p>
+                                <p class="info-item__description no-mobile">отдела продаж <br> и CRM системы</p>
                             </div>
                             <div class="info-item">
                                 <h4 class="info-item__title">35 дней</h4>
-                                <p class="info-item__description">использования CRM</p>
+                                <p class="info-item__description no-mobile">использования CRM</p>
                             </div>
                         </div>
-                        <div class="button-wrapper">
+                        <div class="button-wrapper no-mobile">
                             <button class="button">Получить консультацию</button>
                         </div>
                     </div>
@@ -128,7 +129,7 @@
                         <p class="nav-title">Контакты</p>
                         <ul class="column-contacts">
                             <ul>
-                                <li class="nav-item"><a href="#!" class="nav-link">+7 555 555-55-55</a></li>
+                                <li class="nav-item"><a href="#!" class="nav-link text-mobile">+7 555 555-55-55</a></li>
                             </ul>
                             <ul>
                                 <li class="nav-item nav-item_horizontal"><a href="#!" class="nav-link"><img
@@ -153,6 +154,7 @@
             </div>
         </footer>
     </div>
-</body>
 
+    <script type="module" src="/src/index.js"></script>
+</body>
 </html>

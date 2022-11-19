@@ -1,0 +1,97 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 140px;
+
+    @media @mobile {
+        margin-top: 46px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: flex-start;
+    }
+
+    &-title {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        max-width: 291px;
+
+        @media @mobile {
+            text-align: left;
+        }
+
+        span {
+            background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-weight: 900;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+
+            @media @mobile {
+                text-transform: none;
+                letter-spacing: 0;
+            }
+        }
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 20px;
+        max-width: 310px;
+        margin-top: 40px;
+
+        @media @mobile {
+            margin-top: 19px;
+            gap: 14px 11px;
+        }
+    }
+
+    &-item {
+        &__title {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+
+            text-align: right;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+
+            @media @mobile {
+                font-family: 'Montserrat';
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                text-align: left;
+
+                &::before {
+                    display: inline-block;
+                    vertical-align: middle;
+                    content: '';
+                    width: 10px;
+                    height: 2px;
+                    background: rgb(252, 176, 69);
+                    background: linear-gradient(90deg, rgba(252, 176, 69, 1) 0%, rgba(253, 29, 29, 1) 100%);
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &__description {
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            margin-top: 6px;
+        }
+    }
+}

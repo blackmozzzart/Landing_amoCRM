@@ -1,0 +1,62 @@
+.main {
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+
+        @media @mobile {
+            flex-direction: column;
+        }
+    }
+
+    &-container {
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        
+    }
+
+    &-title {
+        font-family: Inter;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 58px;
+        letter-spacing: 0em;
+        text-align: left;
+        max-width: 362px;
+
+        margin-top: 124px;
+
+        @media @mobile {
+            font-size: 36px;
+            line-height: 44px;
+            margin-top: 40px;
+        }
+
+        span {
+            font-weight: 900;
+            background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+        }
+    }
+
+    &-info {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 275px;
+        margin-top: 30px;
+
+        @media @mobile {
+            margin-top: 15px;
+        }
+    }
+}

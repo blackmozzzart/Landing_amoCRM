@@ -1,0 +1,68 @@
+.politics {
+    text-decoration-line: underline;
+
+    @media @mobile {
+        margin-top: 5px;
+    }
+}
+
+.footer {
+    padding-bottom: 30px;
+    
+    @media @mobile {
+        padding-bottom: 60px;
+        padding-top: 40px;
+        background-color: #0E1014;
+        margin-top: 59px;
+    }
+
+    &-nav {
+        display: flex;
+        margin-top: 123px;
+
+        @media @mobile {
+            margin-top: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 24px;
+        }
+
+        @media @tablet {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 24px;
+        }
+    }
+
+    &-info {
+        font-family: 'Montserrat';
+        font-size: 12px;
+        line-height: 19px;
+        text-align: right;
+        margin-top: 32px;
+
+        @media @mobile {
+            font-size: 12px;
+            line-height: 15px;
+            text-align: left;
+            margin-top: 49px;
+        }
+
+        @media @tablet {
+            text-align: left;
+        }
+    }
+
+    & .nav-item+.nav-item {
+        margin-top: 10px;
+    }
+
+    & .nav-item_horizontal+.nav-item_horizontal {
+        margin-left: 14px;
+        margin-top: 0;
+
+        @media @mobile {
+            margin-left: 4px;
+        }
+    }
+}
