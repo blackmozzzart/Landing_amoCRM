@@ -1,39 +1,106 @@
-.main {}
-
 .main-row {
     display: flex;
+    justify-content: space-between;
 }
 
-.main-content{}
+.main-title {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 362px;
+
+    margin-top: 124px;
+}
+
+.main-title span {
+    font-weight: 900;
+
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.main-info {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 275px;
+    margin-top: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin-top: 140px;
+}
+
+.info-title {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    max-width: 291px;
+}
+
+.info-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+    max-width: 310px;
+    margin-top: 40px;
+}
+
+.info-title span {
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+}
+
+.info-item__title {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.info-item__description {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    margin-top: 6px;
+}
+
+.button-wrapper {
+    margin-top: 60px;
+}
 
 .button {
-    width: 193px;
-    height: 19px;
-    left: 35px;
-    top: 21px;
-
+    padding: 21px 35px 21px 34px;
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-
-    width: 262px;
-    height: 61px;
     color: #E4E5EA;
     background: #4077F3;
-}
-
-.main-redlight {
-    position: relative;
-    height: 311px;
-    width: 311px;
-    left: -102px;
-    top: 251px;
-    border-radius: 0px;
-
-    background: #961A1A;
-    opacity: 0.5;
-    filter: blur(196px);
 }
